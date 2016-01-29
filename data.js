@@ -1,23 +1,23 @@
 $(function() {
 //Highcharts with mySQL and PHP - Ajax101.com
 
-var months = [];
-var days = [];
+var DateTime = [];
+var roomTemperature = [];
 var switch1 = true;
 $.get('values.php', function(data) {
 
 data = data.split('/');
 for (var i in data) {
 if (switch1 == true) {
-months.push(data[i]);
+DateTime.push(data[i]);
 switch1 = false;
 } else {
-days.push(parseFloat(data[i]));
+roomTemperature.push(parseFloat(data[i]));
 switch1 = true;
 }
 
 }
-months.pop();
+DateTime.pop();
 
 $('#chart').highcharts({
 chart : {
@@ -33,7 +33,7 @@ xAxis : {
 title : {
 text : 'Datum & Tijd'
 },
-categories : months
+categories : DateTime
 },
 yAxis : {
 title : {
@@ -62,7 +62,7 @@ lineWidth : 0.5
 series : [{
 
 name : 'Temperatuur',
-data : days
+data : roomTemperature
 }]
 });
 });
