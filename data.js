@@ -24,7 +24,7 @@ chart : {
 type : 'spline'
 },
 title : {
-text : 'Kamertemperatuur Soesterweg 12'
+text : 'Kamertemperatuur'
 },
 subtitle : {
 text : 'binnenkort meer data'
