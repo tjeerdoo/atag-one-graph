@@ -1,6 +1,6 @@
 <?php
 /**
- * Get JSON diagnostics and save values to database.
+ * Get JSON diagnostics and save values to database. Added more info to database, based on this https://github.com/kozmoz/atag-one-api/wiki/Connect-from-PHP
  */
 
 error_reporting(E_ALL);
