@@ -6,8 +6,12 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$email = '*****@gmail.com';
-$password = 'password';
+
+/**
+* $email = '******@gmail.com';
+* $password = 'password';
+*/
+
 $jar = '/usr/local/bin/atag-one.jar';
 
 $json = '';
